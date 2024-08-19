@@ -4,13 +4,14 @@ import CalendarImage from "../../assets/images/features/calendar-feature-screens
 
 export const CalendarFeature = () => {
     return( 
-    <section className="bg-white py-[90px] px-5">
-    <div className="flex flex-col mb-[60px]">
-      <Heading type="h2" className="text-center">  Fastest way to organize  </Heading>
-      <Heading type="h4" className="mb-[60px] mt-4 text-center">  Most calendars are designed for teams. </Heading>
-      <Button > Try For Free </Button>
+    <section className="bg-white py-[90px] px-5 xl:px-8">
+    <div className="w-full max-w-[400px] flex flex-col justify-center items-center mx-auto lg:flex-row lg:max-w-[1240px] lg:gap-[50px]">
+      <div className="flex flex-col mb-[60px] lg:mb-0">
+      <Heading type="h2" className="text-center lg:text-left lg:max-w-[335px] ">  Fastest way to organize  </Heading>
+      <Heading type="h4" className="mb-[60px] mt-4 text-center lg:text-left lg:mb-[70px] lg:mb-w-[532px] ">  Most calendars are designed for teams. Slate is designed for freelancers. </Heading>
+      <Button className="lg:max-w-[236px]"> Try For Free </Button> </div>
+      <img src={CalendarImage}/>
     </div>
-         <img src={CalendarImage}/>
     </section>
     )
 }
